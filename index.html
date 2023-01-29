@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230129004044">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230129210320">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,7 +72,8 @@
 								</svg>
 							</summary>
 							<div class="spollers__content">
-								<select data-search data-scroll="150" name="form[]" data-class-modif="form">
+								<div class="select-tags select-tags_educational-institution"></div>
+								<select multiple data-alltags=".tags-panel" data-tags=".select-tags_educational-institution" data-search data-scroll="150" name="form[]" data-class-modif="form">
 									<option value="">Search...</option>
 									<option value="1">Пункт №1</option>
 									<option value="2">Пункт №2</option>
@@ -89,7 +90,8 @@
 								</svg>
 							</summary>
 							<div class="spollers__content">
-								<select data-search data-scroll="150" name="form[]" data-class-modif="form">
+								<div class="select-tags select-tags_speciality"></div>
+								<select multiple data-alltags=".tags-panel" data-tags=".select-tags_speciality" data-search data-scroll="150" name="form[]" data-class-modif="form">
 									<option value="">Search...</option>
 									<option value="1">Пункт №1</option>
 									<option value="2">Пункт №2</option>
@@ -106,7 +108,8 @@
 								</svg>
 							</summary>
 							<div class="spollers__content">
-								<select data-search data-scroll="150" name="form[]" data-class-modif="form">
+								<div class="select-tags select-tags_profile"></div>
+								<select multiple data-alltags=".tags-panel" data-tags=".select-tags_profile" data-search data-scroll="150" name="form[]" data-class-modif="form">
 									<option value="">Search...</option>
 									<option value="1">Пункт №1</option>
 									<option value="2">Пункт №2</option>
@@ -123,9 +126,9 @@
 								</svg>
 							</summary>
 							<div class="spollers__content">
-								<select data-search data-scroll="150" name="form[]" data-class-modif="form">
+								<div class="select-tags select-tags_pofessions"></div>
+								<select multiple data-alltags=".tags-panel" data-tags=".select-tags_pofessions" data-search data-scroll="150" name="form[]" data-class-modif="form">
 									<option value="">Search...</option>
-
 									<option value="1">Пункт №1</option>
 									<option value="2">Пункт №2</option>
 									<option value="3">Пункт №3</option>
@@ -141,7 +144,8 @@
 								</svg>
 							</summary>
 							<div class="spollers__content">
-								<select data-search data-scroll="150" name="form[]" data-class-modif="form">
+								<div class="select-tags select-tags_regions"></div>
+								<select multiple data-alltags=".tags-panel" data-tags=".select-tags_regions" data-search data-scroll="150" name="form[]" data-class-modif="form">
 									<option value="">Search...</option>
 									<option value="1">Пункт №1</option>
 									<option value="2">Пункт №2</option>
@@ -151,7 +155,7 @@
 							</div>
 						</details>
 
-						<details class="fillters-aside__spollers spollers">
+						<details open class="fillters-aside__spollers spollers">
 							<summary class="spollers__summary">
 								<p class="spollers__title">Освітній ступінь</p>
 								<svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,36 +163,34 @@
 								</svg>
 							</summary>
 							<div class="spollers__content">
-								<div class="options">
-									<div class="options__item">
-										<input id="educational-degree_1" class="options__input" checked type="radio" value="1" name="educational-degree">
-										<label for="educational-degree_1" class="options__label"><span class="options__text">Повна загальна середня освіта</span></label>
-									</div>
-									<div class="options__item">
-										<input id="educational-degree_2" class="options__input" type="radio" value="2" name="educational-degree">
-										<label for="educational-degree_2" class="options__label"><span class="options__text">Фаховий молодший бакалавр</span></label>
-									</div>
-									<div class="options__item">
-										<input id="educational-degree_3" class="options__input" type="radio" value="3" name="educational-degree">
-										<label for="educational-degree_3" class="options__label"><span class="options__text">Молодший бакалавр</span></label>
-									</div>
-									<div class="options__item">
-										<input id="educational-degree_4" class="options__input" type="radio" value="4" name="educational-degree">
-										<label for="educational-degree_4" class="options__label"><span class="options__text">Бакалавр</span></label>
-									</div>
-									<div class="options__item">
-										<input id="educational-degree_5" class="options__input" type="radio" value="5" name="educational-degree">
-										<label for="educational-degree_5" class="options__label"><span class="options__text">Магістр</span></label>
-									</div>
-									<div class="options__item">
-										<input id="educational-degree_6" class="options__input" type="radio" value="6" name="educational-degree">
-										<label for="educational-degree_6" class="options__label"><span class="options__text">Доктор філософії (PhD)</span></label>
-									</div>
+								<div class="checkbox">
+									<input checked id="educational-degree_1" class="checkbox__input" type="checkbox" value="1" name="educational-degree">
+									<label for="educational-degree_1" class="checkbox__label"><span class="checkbox__text">Повна загальна середня освіта</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="educational-degree_2" class="checkbox__input" type="checkbox" value="2" name="educational-degree">
+									<label for="educational-degree_2" class="checkbox__label"><span class="checkbox__text">Фаховий молодший бакалавр</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="educational-degree_3" class="checkbox__input" type="checkbox" value="3" name="educational-degree">
+									<label for="educational-degree_3" class="checkbox__label"><span class="checkbox__text">Молодший бакалавр</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="educational-degree_4" class="checkbox__input" type="checkbox" value="4" name="educational-degree">
+									<label for="educational-degree_4" class="checkbox__label"><span class="checkbox__text">Бакалавр</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="educational-degree_5" class="checkbox__input" type="checkbox" value="5" name="educational-degree">
+									<label for="educational-degree_5" class="checkbox__label"><span class="checkbox__text">Магістр</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="educational-degree_6" class="checkbox__input" type="checkbox" value="6" name="educational-degree">
+									<label for="educational-degree_6" class="checkbox__label"><span class="checkbox__text">Доктор філософії (PhD)</span></label>
 								</div>
 							</div>
 						</details>
 
-						<details class="fillters-aside__spollers spollers">
+						<details open class="fillters-aside__spollers spollers">
 							<summary class="spollers__summary">
 								<p class="spollers__title">Форма навчання</p>
 								<svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,7 +198,19 @@
 								</svg>
 							</summary>
 							<div class="spollers__content">
-								<div class="options">
+								<div class="checkbox">
+									<input checked id="form-of-education_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form-of-education">
+									<label for="form-of-education_1" class="checkbox__label"><span class="checkbox__text">Денна</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="form-of-education_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="2" name="form-of-education">
+									<label for="form-of-education_2" class="checkbox__label"><span class="checkbox__text">Заочна</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="form-of-education_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="3" name="form-of-education">
+									<label for="form-of-education_3" class="checkbox__label"><span class="checkbox__text">Індивідуальна</span></label>
+								</div>
+								<!-- <div class="options">
 									<div class="options__item">
 										<input id="form-of-education_1" class="options__input" checked type="radio" value="1" name="form-of-education">
 										<label for="form-of-education_1" class="options__label"><span class="options__text">Денна</span></label>
@@ -209,7 +223,7 @@
 										<input id="form-of-education_3" class="options__input" type="radio" value="3" name="form-of-education">
 										<label for="form-of-education_3" class="options__label"><span class="options__text">Індивідуальна</span></label>
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</details>
 					</div>
@@ -252,8 +266,14 @@
 
 					</div>
 					<div class="marketplace__tags tags-panel">
-						<button type="button" class="tags-panel__tag">Денна</button>
-						<button type="button" class="tags-panel__tag">Повна загальна середня освіта</button>
+						<div class="select-tags select-tags_educational-institution"></div>
+						<div class="select-tags select-tags_speciality"></div>
+						<div class="select-tags select-tags_profile"></div>
+						<div class="select-tags select-tags_pofessions"></div>
+						<div class="select-tags select-tags_regions"></div>
+
+						<!-- <button type="button" class="tags-panel__tag">Денна</button> -->
+						<!-- <button type="button" class="tags-panel__tag">Повна загальна середня освіта</button> -->
 					</div>
 					<div class="marketplace__cards cards-panel">
 						<div class="cards-panel__card card">
@@ -508,7 +528,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230129004044"></script>
+	<script src="js/app.min.js?_v=20230129210320"></script>
 </body>
 
 </html>
